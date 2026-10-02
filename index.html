@@ -72,11 +72,11 @@
 						<!-- Contact -->
 							<article id="contact">
 								<h2 class="major">CONTATO</h2>
-								<form id="whatsapp-form">
+								<form id="whatsapp-form" novalidate>
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Nome</label>
-											<input type="text" name="name" id="name" required />
+											<input type="text" name="name" id="name" />
 										</div>
 										<div class="field half">
 											<label for="contact">WhatsApp</label>
@@ -127,7 +127,7 @@
 					const contato = document.getElementById('contact').value.trim();
 					const recado = document.getElementById('message').value.trim();
 					const texto = `Olá! Vim pelo site da Cactos & Suculentas da DRY.\n\nNome: ${nome}\nMeu WhatsApp: ${contato || 'não informado'}\n\nMensagem: ${recado || 'Gostaria de conhecer os arranjos disponíveis.'}`;
-					window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`, '_blank', 'noopener');
+					window.location.href = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(texto)}`;
 				});
 			}
 		</script>
