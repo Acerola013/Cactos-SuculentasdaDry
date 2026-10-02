@@ -28,3 +28,5 @@ Credits:
 	Other:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
+
+WhatsApp oficial configurado: (16) 99292-5068.
